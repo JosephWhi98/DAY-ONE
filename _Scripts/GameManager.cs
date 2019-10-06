@@ -124,6 +124,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                camController.hoveringButton = false;
                 endTurnButton.gameObject.SetActive(false);
                 StartEnemyTurn();
             }

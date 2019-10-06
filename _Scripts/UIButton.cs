@@ -39,6 +39,7 @@ public class UIButton : MonoBehaviour
 
         }
         GameManager.instance.camController.hoveringOverClickable = true;
+        GameManager.instance.camController.hoveringButton = true;
     }
 
     public void MouseExit()
@@ -46,6 +47,7 @@ public class UIButton : MonoBehaviour
         hovering = false;
         GameManager.instance.camController.mouseText.text = "";
         GameManager.instance.camController.hoveringOverClickable = false;
+        GameManager.instance.camController.hoveringButton = false;
     }
 
 }

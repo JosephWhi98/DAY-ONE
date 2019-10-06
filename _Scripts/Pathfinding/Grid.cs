@@ -138,7 +138,7 @@ public class Grid : MonoBehaviour
                     }
                 }
 
-                if (path != null)
+                if (path != null && !GameManager.instance.camController.hoveringButton)
                 {
                     foreach (Node n in path)
                     {
@@ -167,7 +167,7 @@ public class Grid : MonoBehaviour
         }
 
 
-        if (!GameManager.instance.playerTurn || GameManager.instance.camController.currentlySelectedCharacter == null)
+        if (!GameManager.instance.playerTurn || GameManager.instance.camController.currentlySelectedCharacter == null || GameManager.instance.camController.hoveringButton)
         {
             foreach (Node n in previousPath)
             {

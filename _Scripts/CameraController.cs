@@ -10,6 +10,8 @@ public class CameraController : MonoBehaviour
     bool followingMouse;
     public bool hoveringOverClickable;
     public bool hittingObsticle;
+    
+    public bool hoveringButton = false;
 
     public TMP_Text mouseText;
 
